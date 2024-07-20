@@ -631,7 +631,7 @@
           </ul>
         </div>
 
-        <div>
+        <div class="footer-div-form">
           <p class="footer-socials-text">Subscribe</p>
 
           <form
@@ -645,7 +645,7 @@
                 class="subscription-form-input"
                 type="email"
                 placeholder="E-mail"
-                name="subscription_user_email"
+                name="subscription-user-email"
               />
             </label>
             <button type="submit" class="btn subscription-form-btn">
@@ -660,7 +660,7 @@
     </footer>
     <!-- #endregion Footer -->
     <!-- #region Modal window -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn-close" type="button">
           <svg class="modal-btn-close-icon" width="8" height="8">
@@ -670,13 +670,13 @@
         <p class="modal-cta">Leave your contacts and we will call you back</p>
         <form class="order-form" name="order" autocomplete="on" method="post">
           <div class="order-form-wrapper">
-            <label class="order-form-label" for="user_name">Name</label>
+            <label class="order-form-label" for="user-name">Name</label>
             <div class="order-form-field">
               <input
                 class="order-form-input"
                 type="text"
-                name="user_name"
-                id="user_name"
+                name="user-name"
+                id="user-name"
                 placeholder="&nbsp;"
                 required
               />
@@ -687,13 +687,13 @@
           </div>
 
           <div class="order-form-wrapper">
-            <label class="order-form-label" for="user_phone">Phone</label>
+            <label class="order-form-label" for="user-phone">Phone</label>
             <div class="order-form-field">
               <input
                 class="order-form-input"
                 type="tel"
-                name="user_phone"
-                id="user_phone"
+                name="user-phone"
+                id="user-phone"
                 placeholder="&nbsp;"
                 required
               />
@@ -704,13 +704,13 @@
           </div>
 
           <div class="order-form-wrapper">
-            <label class="order-form-label" for="user_email">Email</label>
+            <label class="order-form-label" for="user-email">Email</label>
             <div class="order-form-field">
               <input
                 class="order-form-input"
                 type="email"
-                name="user_email"
-                id="user_email"
+                name="user-email"
+                id="user-email"
                 placeholder="&nbsp;"
                 required
               />
@@ -721,11 +721,11 @@
           </div>
 
           <div class="order-form-wrapper">
-            <label class="order-form-label" for="user_msg">Comment</label>
+            <label class="order-form-label" for="user-msg">Comment</label>
             <textarea
               class="order-form-textarea"
-              name="user_msg"
-              id="user_msg"
+              name="user-msg"
+              id="user-msg"
               placeholder="Text input"
               rows="7"
             ></textarea>
@@ -735,10 +735,10 @@
             <input
               class="visually-hidden"
               type="checkbox"
-              name="user_agreement"
-              id="user_agreement"
+              name="user-agreement"
+              id="user-agreement"
             />
-            <label class="order-form-agreement-desc" for="user_agreement">
+            <label class="order-form-agreement-desc" for="user-agreement">
               <span class="order-form-checkbox">
                 <svg class="order-form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#tick"></use>

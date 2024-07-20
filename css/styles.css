@@ -446,7 +446,10 @@ img {
   width: 100%;
 }
 .subscription-form-input {
-  width: 100%;
+  width: 264px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
   height: 40px;
   padding: 8px 16px;
   border-radius: 4px;
@@ -459,13 +462,15 @@ img {
   transition: var(--trns);
 }
 .subscription-form-btn {
+  min-width: 165px;
+  /* min-height: auto; */
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   box-shadow: none;
   padding: 8px 24px;
-  min-width: 165px;
   margin: 0 0;
-  min-height: auto;
-  display: flex;
-  gap: 16px;
 }
 .subscription-form-input::placeholder {
   color: var(--white-bg-cl);
@@ -477,6 +482,7 @@ img {
 }
 .subscription-form-icon {
   fill: var(--white-bg-cl);
+  margin-left: 16px;
 }
 /* #endregion Footer */
 /* #region Modal window */
@@ -551,7 +557,7 @@ img {
 .order-form-label {
   color: var(--subtle-text-cl);
   font-size: 12px;
-  line-height: 116.7%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
 }
 .order-form-field {
@@ -653,6 +659,8 @@ input[type='checkbox']:checked
   text-decoration-line: underline;
   text-decoration-skip-ink: none;
 }
-.modal-btn {
+.modal-btn:hover,
+.modal-btn:focus {
+  border: none;
 }
 /* #endregion Modal window */
