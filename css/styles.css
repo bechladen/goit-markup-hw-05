@@ -3,6 +3,7 @@
   /* Fonts */
   --primary-font: 'Roboto', sans-serif;
   --secondary-font: 'Raleway', sans-serif;
+
   /* Colors */
   --primary-brand-cl: #4d5ae5;
   --pressed-state-cl: #404bbf;
@@ -44,6 +45,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--text-cl);
   background-color: var(--white-bg-cl);
+
   /* Default values */
   font-size: 16px;
   font-weight: 400;
@@ -102,6 +104,7 @@ img {
   margin: -1px;
   border: 0;
   padding: 0;
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
@@ -483,6 +486,7 @@ img {
   left: 0;
   background-color: var(--modal-overlay-cl);
   inset: 0;
+
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -533,23 +537,6 @@ img {
 }
 .modal-btn-close-icon {
 }
-
-
-
-
-
-
-
-          Expand Down
-
-
-
-
-
-          Expand Up
-
-    @@ -559,6 +567,7 @@ img {
-
 .order-form {
 }
 .modal-cta {
@@ -564,7 +551,7 @@ img {
 .order-form-label {
   color: var(--subtle-text-cl);
   font-size: 12px;
-  line-height: 116.7%;
+  line-height: 1.17;
   letter-spacing: 0.04em;
 }
 .order-form-field {
@@ -584,17 +571,6 @@ img {
 }
 .order-form-input:focus {
   border-color: var(--primary-brand-cl);
-
-
-
-
-
-
-
-        Expand All
-
-    @@ -578,30 +587,72 @@ img {
-
 }
 .order-form-icon {
   position: absolute;
