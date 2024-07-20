@@ -526,6 +526,14 @@ img {
   background-color: var(--accent-cl);
   fill: var(--dark-cl);
   border: 1px solid rgba(0, 0, 0, 0.102);
+  transition: var(--trns);
+  transition-property: fill, background-color, border-color;
+}
+.modal-btn-close:hover,
+.modal-btn-close:focus {
+  fill: var(--white-bg-cl);
+  background-color: var(--pressed-state-cl);
+  border-color: transparent;
 }
 .modal-btn-close-icon {
 }
@@ -559,6 +567,7 @@ img {
   outline: transparent;
   transition: var(--trns);
   transition-property: border-color;
+  color: var(--dark-cl);
 }
 .order-form-input:focus {
   border-color: var(--primary-brand-cl);
@@ -578,29 +587,71 @@ img {
   fill: var(--primary-brand-cl);
 }
 .order-form-textarea {
-  width: 100%;
   height: 120px;
   padding: 8px 16px;
   border-radius: 4px;
   border: 1px solid var(--modal-overlay-cl);
   outline: transparent;
   margin-top: 4px;
-  /* transition: var(--trns);
-  transition-property: border-color; */
+  transition: var(--trns);
+  transition-property: border-color;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--dark-cl);
+}
+.order-form-textarea:focus {
+  border-color: var(--primary-brand-cl);
 }
 .order-form-textarea::placeholder {
   color: var(--modal-overlay-cl);
-
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 14px; /* 116.667% */
-  letter-spacing: 0.48px;
 }
 .order-form-agreement {
   margin-top: 16px;
   margin-bottom: 24px;
+}
+.order-form-agreement-desc {
+  color: var(--subtle-text-cl);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+.order-form-checkbox {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid var(--modal-overlay-cl);
+  border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: var(--trns);
+  transition-property: background-color, border-color;
+}
+input[type='checkbox']:checked
+  + .order-form-agreement-desc
+  > .order-form-checkbox {
+  background-color: var(--pressed-state-cl);
+  border-color: transparent;
+}
+.order-form-checkbox-icon {
+  fill: transparent;
+  transition: var(--trns);
+  transition-property: fill;
+}
+input[type='checkbox']:checked
+  + .order-form-agreement-desc
+  > .order-form-checkbox
+  > .order-form-checkbox-icon {
+  fill: var(--light-cl);
+}
+.order-form-agreement-link {
+  color: var(--primary-brand-cl);
+  letter-spacing: 0.48px;
+  line-height: 1.33;
+  text-decoration-line: underline;
+  text-decoration-skip-ink: none;
 }
 .modal-btn {
 }

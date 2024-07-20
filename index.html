@@ -660,7 +660,7 @@
     </footer>
     <!-- #endregion Footer -->
     <!-- #region Modal window -->
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-btn-close" type="button">
           <svg class="modal-btn-close-icon" width="8" height="8">
@@ -732,15 +732,24 @@
           </div>
 
           <div class="order-form-agreement">
-            <input type="checkbox" name="user_agreement" />
-            <label class="order-form-agreement-desc">
-              <span>
-                <svg class="" width="10" height="8">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              name="user_agreement"
+              id="user_agreement"
+            />
+            <label class="order-form-agreement-desc" for="user_agreement">
+              <span class="order-form-checkbox">
+                <svg class="order-form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#tick"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href="" target="_blank" rel="noopener noreferrer"
+              <a
+                class="order-form-agreement-link"
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
                 >Privacy Policy</a
               >
             </label>
