@@ -661,7 +661,7 @@
     </footer>
     <!-- #endregion Footer -->
     <!-- #region Modal window -->
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn-close" type="button">
           <svg class="modal-btn-close-icon" width="8" height="8">
@@ -681,7 +681,7 @@
                 placeholder="&nbsp;"
                 required
               />
-              <svg class="order-form-icon" width="18" height="18">
+              <svg class="order-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#name"></use>
               </svg>
             </div>
@@ -698,7 +698,7 @@
                 placeholder="&nbsp;"
                 required
               />
-              <svg class="order-form-icon" width="18" height="18">
+              <svg class="order-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#phone"></use>
               </svg>
             </div>
@@ -715,18 +715,18 @@
                 placeholder="&nbsp;"
                 required
               />
-              <svg class="order-form-icon" width="18" height="18">
+              <svg class="order-form-icon" width="18" height="24">
                 <use href="./images/icons.svg#email"></use>
               </svg>
             </div>
           </div>
 
-          <div class="order-form-wrapper">
-            <label class="order-form-label" for="user-msg">Comment</label>
+          <div class="order-form-wrapper order-form-wrapper-textarea">
+            <label class="order-form-label" for="user-comment">Comment</label>
             <textarea
               class="order-form-textarea"
-              name="user-msg"
-              id="user-msg"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
               rows="7"
             ></textarea>
@@ -736,10 +736,11 @@
             <input
               class="visually-hidden"
               type="checkbox"
-              name="user-agreement"
-              id="user-agreement"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
             />
-            <label class="order-form-agreement-desc" for="user-agreement">
+            <label class="order-form-agreement-desc" for="user-privacy">
               <span class="order-form-checkbox">
                 <svg class="order-form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#tick"></use>
