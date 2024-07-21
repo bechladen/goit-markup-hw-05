@@ -519,6 +519,7 @@ img {
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
   padding: 24px;
   padding-top: 72px;
+  transition: transform var(--trns);
 }
 .modal-btn-close {
   position: absolute;
@@ -566,7 +567,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  display: flex;
+  display: block;
   margin-bottom: 4px;
 }
 .order-form-field {
@@ -658,7 +659,8 @@ input[type='checkbox']:checked
   > .order-form-checkbox {
   border: none;
   background-color: var(--pressed-state-cl);
-  fill: var(--pressed-state-cl);
+  /* fill: var(--pressed-state-cl); */
+  fill: var(--light-cl);
 }
 .order-form-checkbox-icon {
   fill: transparent;
@@ -680,6 +682,7 @@ input[type='checkbox']:checked
   text-decoration-skip-ink: none;
 }
 .modal-btn {
+  transition: border var(--trns);
 }
 .modal-btn:hover,
 .modal-btn:focus {
