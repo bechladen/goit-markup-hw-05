@@ -146,8 +146,9 @@ img {
   border-radius: 4px;
   border: none;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition: var(--trns);
-  transition-property: background-color;
+  /* transition: var(--trns);
+  transition-property: background-color; */
+  transition: background-color var(--trns);
 }
 .btn:hover,
 .btn:focus {
@@ -537,14 +538,13 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.102);
   /* transition: var(--trns);
   transition-property: fill, background-color, border-color; */
-  transition: fill var(--trns), background-color var(--trns),
-    border-color var(--trns);
+  transition: fill var(--trns), background-color var(--trns), border var(--trns);
 }
 .modal-btn-close:hover,
 .modal-btn-close:focus {
   fill: var(--white-bg-cl);
   background-color: var(--pressed-state-cl);
-  border-color: transparent;
+  border: none;
 }
 .modal-btn-close-icon {
 }
@@ -682,10 +682,5 @@ input[type='checkbox']:checked
   text-decoration-skip-ink: none;
 }
 .modal-btn {
-  transition: border var(--trns);
-}
-.modal-btn:hover,
-.modal-btn:focus {
-  border: none;
 }
 /* #endregion Modal window */
