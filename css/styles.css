@@ -538,7 +538,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.102);
   /* transition: var(--trns);
   transition-property: fill, background-color, border-color; */
-  transition: fill var(--trns), background-color var(--trns), border var(--trns);
+  transition: background-color var(--trns), border var(--trns);
 }
 .modal-btn-close:hover,
 .modal-btn-close:focus {
@@ -547,6 +547,7 @@ img {
   border: none;
 }
 .modal-btn-close-icon {
+  transition: fill var(--trns);
 }
 .order-form {
 }
