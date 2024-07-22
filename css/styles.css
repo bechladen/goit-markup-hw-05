@@ -244,6 +244,7 @@ img {
 .nav {
   display: flex;
   margin-right: auto;
+  /* flex-shrink: 1; */
   align-items: center;
 }
 .nav-list {
@@ -357,6 +358,11 @@ img {
   transition: var(--trns);
   transition-property: box-shadow;
 }
+.portfolio-card:hover {
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
 .portfolio-box {
   position: relative;
   overflow: hidden;
@@ -376,11 +382,6 @@ img {
   background-color: var(--primary-brand-cl);
   transition: var(--trns);
   transition-property: transform;
-}
-.portfolio-card:hover {
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .portfolio-card:hover .overlay {
   transform: translateY(0);
