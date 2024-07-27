@@ -364,6 +364,7 @@ img {
     0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 .portfolio-box {
+  display: block;
   position: relative;
   overflow: hidden;
 }
@@ -383,7 +384,8 @@ img {
   transition: var(--trns);
   transition-property: transform;
 }
-.portfolio-card:hover .overlay {
+.portfolio-card .portfolio-box:hover .overlay,
+.portfolio-card .portfolio-box:focus .overlay {
   transform: translateY(0);
 }
 .portfolio-card-data {
